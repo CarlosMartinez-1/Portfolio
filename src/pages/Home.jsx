@@ -72,7 +72,7 @@ function Home(){
                     <h1 className="p-3 rounded-2 bg-light text-dark position-absolute" style={bannerText}>Made by Me.</h1>
             </div>
 
-            <div className="w-75 mx-auto d-flex responsive-block bg-white p-5 m-5 rounded-5 shadow">
+            <div className="w-75 mx-auto d-flex responsive-block responsive-w100 bg-white p-5 m-5 rounded-5 shadow">
                 <div className="w-50 responsive-w100">
                     <h1>Hi,<br/>I'm Carlos Martinez</h1>
                     <h1 className="">I'm a</h1>
@@ -123,7 +123,9 @@ function Home(){
                                     What runs the internet!
                                 </p>
                                 <p>Skills: </p>
-                                <div className="bg-warning p-3"></div>
+                                <div className="text-secondary">
+                                    JS HTML/CSS React
+                                </div>
                             </div>
                             <div className="w-25 my-auto">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
@@ -145,7 +147,9 @@ function Home(){
                                     A good past time.
                                 </p>
                                 <p>Skills: </p>
-                                <div className="bg-warning p-3"></div>
+                                <div className="text-secondary">
+                                    C# Python Unity Unreal Maya Photoshop
+                                </div>
                             </div>
                             <div className="w-25 my-auto">
                                 <svg viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
@@ -178,7 +182,9 @@ function Home(){
                                 Immersion like never before!
                             </p>
                             <p>Skills: </p>
-                            <div className="bg-warning p-3"></div>
+                            <div className="text-secondary">
+                                C# Unity OpenXR
+                            </div>
                         </div>
                         <div className="w-25 my-auto">
                         <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
