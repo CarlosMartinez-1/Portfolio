@@ -1,0 +1,97 @@
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.bg-radial {
+    background-image: linear-gradient(to right top, #f8bb9a, #fba79f, #f396ad, #de8cc1, #b789d4);
+}
+
+.large-btn1 {
+    background-color: #1a1a1a;
+    border: .3em solid slategray;
+    transition: background-color .2s;
+}
+
+.large-btn1:hover {
+    background-color: slategray;
+}
+
+.large-btn2 {
+    background-color: #1a1a1a;
+    border: .3em solid slateblue;
+    transition: background-color .2s;
+}
+
+.large-btn2:hover {
+    background-color: slateblue;
+}
+
+.large-btn3 {
+    background-color: #1a1a1a;
+    border: .3em solid seagreen;
+    transition: background-color .2s;
+}
+
+.large-btn3:hover {
+    background-color: seagreen;
+}
+
+.iconImg {
+    width: 20%;
+    margin: .5em;
+    border: .2em solid rgba(175, 90, 232,.1);
+    padding: .7em;
+    border-radius: 20%;
+    overflow: visible;
+    transition: width .1s, border .1s;
+}
+
+.iconImg:hover {
+    width: 22%;
+    border: .3em solid rgba(175, 90, 232,.7);
+}
+
+.descTxt {
+    position: relative;
+    overflow: hidden;
+    border-right: 2px solid black;
+    white-space: nowarp;
+    animation: typewriter 3s steps(11) infinite alternate both, blinkCursor 500ms infinite;
+
+    font-size: 3em;
+    font-family: 'Titillium Web', sans-serif;
+    background: linear-gradient(90deg, rgba(255,87,15,1) 0%, rgba(175,0,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes typewriter {
+    0% {width: 0em;}
+    10% {width: 0em;}
+    33% {width: 4.5em;}
+    66% {width: 4.5em;}
+    90% {width: 0em;}
+    100% {width: 0em;}
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: black;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.res-margin {
+    margin: 1.5rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .res-margin {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

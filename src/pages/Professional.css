@@ -1,0 +1,29 @@
+.banner {
+    background-image: linear-gradient(to right top, #2f214f, #2a1d4c, #241849, #1e1447, #171044);
+    
+}
+
+.pop {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.blurb {
+    width: 50%;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .pop {
+        margin-right: auto;
+        margin-left: auto;
+        height: 400px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .blurb {
+        width: 75%;
+    }
+}

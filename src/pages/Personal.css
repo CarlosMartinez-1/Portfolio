@@ -1,0 +1,58 @@
+.bg-image {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-pjk {
+    background-image: url("../assets/gifs/projectk01.gif");
+
+}
+
+.bg-hotdog {
+    background-image: url("../assets/gifs/glizzy01.gif");
+
+}
+
+.bg-pong {
+    background-image: url("../assets/gifs/beatpong01.gif");
+
+}
+
+.card-height {
+    height: 400px;
+}
+
+.content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -150%);
+    z-index: 2;
+}
+
+.title {
+    font-size: 10rem;
+    padding-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    .title{
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title{
+        font-size: 5rem;
+    }
+}
+
+.bg-star{
+    background-image: url("../assets/star.png");
+    background-repeat: repeat;
+    background-color: #080808;
+}

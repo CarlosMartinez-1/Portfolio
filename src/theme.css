@@ -1,0 +1,42 @@
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 992px) {
+    .responsive-block {
+        display: block!important;
+    }
+
+    .responsive-w100{
+        width: 100%!important;
+    }
+
+    
+}
+
+/* Colors */
+
+.bg-light {
+    background-color: #edf4ff;
+}
+
+.bg-darker {
+    background: #171717;
+}
+
+.contact-icon {
+    width: 2.5rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
