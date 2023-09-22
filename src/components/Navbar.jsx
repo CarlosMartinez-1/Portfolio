@@ -8,7 +8,7 @@ function Navbar() {
 
     return (
         <>
-            <Menu collapseOnSelect key="lg" sticky="top" bg="dark" variant="dark" expand="lg">
+            <Menu className="bg-darkAlt" collapseOnSelect key="lg" sticky="top"  variant="dark" expand="lg">
                 <Container>
                     <Menu.Brand className="w-50 fs-3 justify-content-start">
                         <Link to="/" className="text-light float-right text-decoration-none d-flex">
@@ -17,7 +17,7 @@ function Navbar() {
                         </Link>
                     </Menu.Brand>
                     <Menu.Toggle aria-controls="offcanvasNavbar-expand-lg"/>
-                    <Menu.Offcanvas className="bg-dark text-light" id="offcanvasNavbar-expand-lg" aria-labelledby="offcanvasNavbarLabel-expand-lg" placement="end">
+                    <Menu.Offcanvas className="bg-darkAlt text-light" id="offcanvasNavbar-expand-lg" aria-labelledby="offcanvasNavbarLabel-expand-lg" placement="end">
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
                                 Menu

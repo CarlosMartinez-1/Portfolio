@@ -22,6 +22,11 @@
         width: 100%!important;
     }
 
+    .res-p{
+        padding-left: 1em!important;
+        padding-right: 1em!important;
+    }
+
     
 }
 
@@ -35,8 +40,21 @@
     background: #171717;
 }
 
+.bg-darkAlt {
+    background-color: #050610!important;
+}
+
+.txt-lightAlt {
+    color: #b5c4bd;
+}
+
+.txt-lightAltHeader {
+    color: #748ec0;
+}
+
 .contact-icon {
     width: 2.5rem;
     margin-left: .2rem;
     margin-right: .2rem;
+    filter: invert(1);
 }

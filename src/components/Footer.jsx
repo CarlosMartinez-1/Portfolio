@@ -5,7 +5,7 @@ function Footer(){
 
     return (
         <>
-            <div className="bg-dark w-100">
+            <div className="bg-darkAlt w-100">
                 <div className="pt-5">
                     <ContactLinks/>
                 </div>

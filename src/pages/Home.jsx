@@ -20,77 +20,52 @@ import icon9 from "../assets/icons/unity.png";
 import icon10 from "../assets/icons/unreal.png";
 import icon11 from "../assets/icons/python.png";
 
-import cartoon from "../assets/cartoon_profile.png";
+import hookImg from "../assets/banner.png";
 
-const gifs = [gif1,gif2,gif3,gif4,gif5];
 const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10, icon11];
-const words = ["developer", "designer", "creator", "thinker"]
+const words = ["developer.", "designer.", "creator.", "thinker."]
 
 function Home(){
-    const bannerImg = {
-        filter: "brightness(50%)",
-        height: "800px",
-        objectFit: "cover",
-    };
-
-    const bannerText = {
-        top: "50%",
-	    left: "50%",
-	    transform: "translate(-50%, -50%)"
-    };
-
-    const [gif, setGif] = useState(gifs[0]);
     const [index, setIndex] = useState(0);
 
     const [word, setWord] = useState(words[0]);
     const [wordIndex, setWordIndex] = useState(0);
 
     useEffect(() => {
-        const timerId = setInterval(() => setWordIndex((i) => (i + 1) % words.length), 3000);
+        const timerId = setInterval(() => setWordIndex((i) => (i + 1) % words.length), 5000);
         return() => clearInterval(timerId);
     }, []);
 
     useEffect(() => {
         setWord(words[wordIndex]);
     }, [wordIndex]);
-
-    useEffect(() =>{
-        const timerId = setInterval(() => setIndex((i) => (i + 1) % gifs.length), 1500);
-        return () => clearInterval(timerId);
-    }, []);
-
-    useEffect(() => {
-        setGif(gifs[index]);
-      }, [index]);
-
     return (
         <div className="bg-light">
-            <div className="w-100 position-relative">
 
-                    <img className="w-100" style={bannerImg} src={gif} />
-
-                    <h1 className="p-3 rounded-2 bg-light text-dark position-absolute" style={bannerText}>Made by Me.</h1>
-            </div>
-
-            <div className="w-75 mx-auto d-flex responsive-block responsive-w100 bg-white p-5 m-5 rounded-5 shadow">
-                <div className="w-50 responsive-w100">
-                    <h1>Hi,<br/>I'm Carlos Martinez</h1>
-                    <h1 className="">I'm a</h1>
-                    <h1 className="descTxt">{word}</h1>
-                    <p className="border-start border-5 border-dark p-3 opensans">
-                        Welcome to my site!
-                        Take a look around to see what I have worked on.
-                        Technology is my passion, and I must know how it works.
-                        For that reason, I explore different fields to learn, create, and innovate in them.
-                        It has led me to work in areas such as full-stack web development, game development, virtual reality, and much more.
+            <div className="w-100 mx-auto responsive-block bg-darkAlt">
+                <div className="w-75 mx-auto d-flex responsive-block responsive-w100">
+                    <div className="w-50 mx-auto py-5 responsive-w100 res-p">
+                        <h2 className="txt-lightAlt">Hi, I'm </h2>
+                        <h1 className="display-1 txt-lightAltHeader">Carlos Martinez.</h1>
+                        <h2 className="txt-lightAlt">I'm a</h2>
+                        <h1 className="display-1 descTxt">{word}</h1>
+                        <p className="banner-p p-3 opensans txt-lightAlt">
+                        I'm a generalist developer with experience in web dev, ecommerce, full-stack apps, game dev, VR, and much more.
                         <br/>
                         <br/>
-                        Through exploring in those diverse areas, it has given me more insight and apprieciation for what goes into developing software.
-                        Not only have I learned new and diverse skills, but I have grown my creative thinking and problem solving ability.
-                        Let me know if you are interested in what I can offer to you.
-                    </p>
+                        As a tech enthusiast, I love exploring different fields. 
+                        Through exploring several areas, I gained more insight and appreciation for software development. 
+                        I developed a diverse skillset and improved my creative thinking and problem-solving ability. 
+                        Let me know if you are interested in what I can offer you.
+                        </p>
+                        <button type="button" className="m-4 banner-btn">
+                            Contact me
+                        </button>
+                    </div>
+                    <div className="w-50 m-auto p-1 responsive-w100 res-p">
+                        <img className="w-100 hookImg" src={hookImg}></img>
+                    </div>
                 </div>
-                <img src={cartoon} className="w-50 p-5 responsive-w100"/>
             </div>
 
             <div className="bg-radial py-5">
@@ -123,9 +98,7 @@ function Home(){
                                     What runs the internet!
                                 </p>
                                 <p>Skills: </p>
-                                <div className="text-secondary">
-                                    JS HTML/CSS React
-                                </div>
+                                <div className="bg-warning p-3"></div>
                             </div>
                             <div className="w-25 my-auto">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
@@ -147,9 +120,7 @@ function Home(){
                                     A good past time.
                                 </p>
                                 <p>Skills: </p>
-                                <div className="text-secondary">
-                                    C# Python Unity Unreal Maya Photoshop
-                                </div>
+                                <div className="bg-warning p-3"></div>
                             </div>
                             <div className="w-25 my-auto">
                                 <svg viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
@@ -182,9 +153,7 @@ function Home(){
                                 Immersion like never before!
                             </p>
                             <p>Skills: </p>
-                            <div className="text-secondary">
-                                C# Unity OpenXR
-                            </div>
+                            <div className="bg-warning p-3"></div>
                         </div>
                         <div className="w-25 my-auto">
                         <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">

@@ -11,14 +11,12 @@ import cube from "../assets/cube.png";
 function Personal(){
 
     return (
-        <div className="bg-star">
-            <Parallax speed={-20}>
-                <div className="w-75 mx-auto text-center text-light titillium title">
-                    Game Development
-                </div>
-            </Parallax>
+        <div className="bg-darkAlt">
+            <div className="w-75 mx-auto text-center text-light titillium title">
+                Game Development
+            </div>
 
-            <Parallax speed={50}>
+            
             <div className="w-50 mx-auto text-center p-5 m-5 text-light bg-dark rounded-5">
                 <h2>My Passion</h2>
                 <p>
@@ -34,10 +32,8 @@ function Personal(){
                 Check out what I have been working on.
                 </p>
             </div>
-            </Parallax>
 
 
-            <Parallax speed={20}>
             <div className="w-50 mx-auto text-light card-height my-5 responsive-w100">
                 <div className="bg-image bg-pjk rounded-3"></div>
                 <div className="w-100 content d-flex justify-content-around">
@@ -52,9 +48,7 @@ function Personal(){
                     
                 </div>
             </div>
-            </Parallax>
 
-            <Parallax speed={20}>
             <div className="w-50 mx-auto text-light card-height my-5 responsive-w100">
                 <div className="bg-image bg-hotdog bg-pjk rounded-3"></div>
                 <div className="w-100 content d-flex justify-content-around">
@@ -69,9 +63,7 @@ function Personal(){
                     
                 </div>
             </div>
-            </Parallax>
 
-            <Parallax speed={0}>
             <div className="w-50 mx-auto text-light card-height mt-5 responsive-w100">
                 <div className="bg-image bg-pong bg-pjk rounded-3"></div>
                 <div className="w-100 content d-flex justify-content-around">
@@ -86,7 +78,6 @@ function Personal(){
                     
                 </div>
             </div>
-            </Parallax>
 
         </div>
     )
